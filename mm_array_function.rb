@@ -1,34 +1,28 @@
 #This is the logic to solve the challenge
 
-def mm_array
-
-
-mm_array = *(1..100)
+def mm_array	
+numbers = [*1..100] #This creates the array with numbers 1 to 100
 
 	
 
-mm_array.each_index do |index|
-
-	value = mm_array[index]
+	numbers.map! {|number|
 		#This tests for divisibility by 3 and 5
-		if value % 15 == 0 #The test for 15 must come first
-			mm_array[index] = "Mined Minds"
-		
+		if (number % 15 == 0 )#The test for 15 must come first
+			"Mined Minds"
+			
 		#This tests for divisibility by 3
-		elsif value % 3 == 0
-			mm_array[index] = "Mined"
-		
+		elsif (number % 3 == 0)
+			"Mined"
+			
 		#This tests for divisibility by 5
-		elsif value % 5 == 0
-			mm_array[index] = "Minds"
+		elsif (number % 5 == 0)
+			"Minds"
+		
 		else
-			value
+			number
+		
 		end
+	}
 
-		 
-	end
-puts mm_array
 end
-
-
 
