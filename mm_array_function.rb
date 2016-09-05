@@ -26,3 +26,4 @@ numbers = [*1..100] #This creates the array with numbers 1 to 100
 
 end
 
+puts mm_array

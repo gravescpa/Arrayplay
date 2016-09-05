@@ -12,22 +12,22 @@ class TestArrayFunction < Minitest::Test
 
 	def test_first_equals_1
 		result = mm_array()
-		assert_equal(1, mm_array[0])
+		assert_equal(1, result[0])
 	end
 
 	def test_mined
 		result = mm_array()
-		assert_equal("Mined", mm_array[2])
+		assert_equal("Mined", result[2])
 	end
 
 	def test_minds
 		result = mm_array()
-		assert_equal("Minds", mm_array[4])
+		assert_equal("Minds", result[4])
 	end
 
 	def test_Mined_Minds
 		result = mm_array()
-		assert_equal("Mined Minds", mm_array[14])
+		assert_equal("Mined Minds", result[14])
 	end
 
 
