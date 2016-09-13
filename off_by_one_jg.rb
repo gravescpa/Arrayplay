@@ -42,3 +42,34 @@ def off_by_one(ticket_1, ticket_2)
 	
 end
 
+def find_tickets_one_off(my_ticket, winning_tickets)
+
+	tickets_one_off = []
+	
+
+	winning_tickets.each do |ticket|
+
+		#The iteration through each ticket has already been done in the off_by_one method above
+
+		#Calling one function from another
+
+		if off_by_one(my_ticket, ticket)
+			tickets_one_off << ticket
+		end
+	end
+	tickets_one_off
+
+end
+
+
+
+
+
+
+
+
+
+
+
+
+
