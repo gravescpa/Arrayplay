@@ -16,10 +16,9 @@ class TestArrayFunction < Minitest::Test
 		assert_equal(true, result(winners, my_num))
 	end
 
-	def test_to_check_for_loser
+	def test_1_to_check_for_winner
 		winners = ["1234", "2567", "1984", "3756"]
 		my_num = "4567"
 		assert_equal(false, result(winners, my_num))
 	end
-	
 end

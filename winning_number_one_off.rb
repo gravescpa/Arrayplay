@@ -1,21 +1,23 @@
 
 def result(winner, my_num)	
 	
-tickets = []
+	tickets = []
 
-		if my_num <=> winner = 1
-			tickets << my_num
-		elsif my_num <=> winner = -1
-			tickets << my_num
-		else
+			if my_num <=> winner = 1
+				tickets << my_num
+			elsif my_num <=> winner = -1
+				tickets << my_num
+			# elsif my_num <=> winner = 0
+			# 	tickets << "Winner!"
+			end
 
-		end
-
-		# if tickets == []
-		# 	false
-		# end
-puts tickets
+	tickets
 
 end
-result(["4567"], "2567")
+#result(["4567"], "2567")
 
+
+# from stackoverflow
+# def off(my_ticket, winning_tickets)
+#   ( my_ticket.split('') & winning_tickets.split('') ).length == 3
+# end

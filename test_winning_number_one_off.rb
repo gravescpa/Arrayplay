@@ -9,10 +9,15 @@ class TestArrayFunction < Minitest::Test
 
 #This are the test methods
 	
-	def test_a_matching_ticket_one_number_off
+	def test_1_matching_ticket_one_number_off
         my_num = "4527"
         winner = ["4567"]
-        assert_equal(true, result(winner, my_num))
+        assert_equal([my_num], result(winner, my_num))
     end
 
+	def test_2_matching_ticket_one_number_off
+        my_num = "4567"
+        winner = ["4567"]
+        assert_equal([], result(winner, my_num))
+    end
 end
